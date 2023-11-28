@@ -1,6 +1,6 @@
 "use server";
 
-import AnimeCard, { WebSeriesProp } from "@/components/SeriesCard";
+import SeriesCard, { WebSeriesProp } from "@/components/SeriesCard";
 
 export const fetchSeries = async (page: number) => {
   const response = await fetch(
@@ -9,6 +9,6 @@ export const fetchSeries = async (page: number) => {
 
   const data = await response.json();
   return data.map((item: WebSeriesProp, index: number) => (
-    <AnimeCard key={index} series={item} index={index} />
+    <SeriesCard key={index} series={item} index={index} />
   ));
 };

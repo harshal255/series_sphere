@@ -23,7 +23,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={dmSans.className}>
-        <main className="max-w-7xl mx-auto bg-[#acacac]">
+        <main className="max-w-screen">
           <Loading></Loading>
           {children}
           <Footer />
