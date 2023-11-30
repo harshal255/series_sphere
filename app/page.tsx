@@ -19,7 +19,3 @@ async function Home() {
 }
 
 export default Home;
-
-export const delay = async (ms: number) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
