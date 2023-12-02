@@ -1,6 +1,6 @@
 "use client";
 
-import SeriesCard, { WebSeriesProp } from "./SeriesCard";
+import SeriesCard from "./SeriesCard";
 import { fetchSeries } from "@/app/action";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -18,6 +18,7 @@ function LoadMore() {
       // alert("view more");
       fetchSeries(page).then((res) => {
         setData([...data, ...res]);
+        console.log(data);
         page++;
       });
     }

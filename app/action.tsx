@@ -8,6 +8,7 @@ export const fetchSeries = async (page: number) => {
   );
 
   const data = await response.json();
+  // console.log(data);
   return data.map((item: WebSeriesProp, index: number) => (
     <SeriesCard key={index} series={item} index={index} />
   ));

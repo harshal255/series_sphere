@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import LoadMore from "../components/LoadMore";
 import { fetchSeries } from "./action";
 
@@ -19,7 +19,3 @@ async function Home() {
 }
 
 export default Home;
-
-export const delay = async (ms: number) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
